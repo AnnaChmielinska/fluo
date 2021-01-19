@@ -72,7 +72,7 @@ class Model():
         """
         return GenericModel(
             self._model_function(**independent_var),
-            missing='drop',
+            missing='omit',
             name=self.name
             )
 
@@ -271,7 +271,7 @@ class AddConstant():
         """
         return GenericModel(
             self._model_function(**independent_var),
-            missing='drop',
+            missing='omit',
             name=self.name
             )
 
@@ -354,7 +354,7 @@ class Linearize():
         """
         return GenericModel(
             self._model_function(**independent_var),
-            missing='drop',
+            missing='omit',
             name=self.name)
 
     def _model_function(self, **independent_var):
@@ -464,7 +464,7 @@ class Convolve():
         """
         return GenericModel(
             self._model_function(**independent_var),
-            missing='drop',
+            missing='omit',
             name=self.name
             )
 
