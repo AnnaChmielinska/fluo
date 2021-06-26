@@ -13,7 +13,7 @@ setup(
     author='Anna Chmielinska',
     author_email='anka.chmielinska@gmail.com',
     url = 'https://github.com/AnnaChmielinska/fluo',
-    download_url = 'https://github.com/AnnaChmielinska/fluo/archive/1.0.tar.gz',
+    download_url = 'https://github.com/AnnaChmielinska/fluo/archive/{}.tar.gz'.format(version),
     license='General Public License 3',
     description='Fluorescence in time domain toolkit.',
     long_description=open(join(dirname(__file__), 'README.rst')).read(),
