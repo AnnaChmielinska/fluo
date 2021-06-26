@@ -58,7 +58,7 @@ class CStatistic(Statistic):
     Parameters
     ----------
     optimization_method : str, optional
-        'nelder' by default. Accepts the following str: 'nelder', 'powell'.
+        'powell' by default. Accepts the following str: 'nelder', 'powell'.
 
     Attributes
     ----------
@@ -116,7 +116,12 @@ class CStatistic(Statistic):
         model_copy = np.copy(model)
         dependent_var_copy = np.copy(dependent_var)
         if np.sum(model < 0):
-            warnings.warn("Negative values in model. Make sure the parameters are constrained in such a way that the model is not negative-valued anywhere.")
+            warnings.warn("""
+            Negative values in model.
+            Make sure the parameters are constrained in such a way that the model is not negative-valued anywhere.
+            Dropping negative values from the model
+            """)
+            model_copy[model < 0] = np.nan
         dependent_var_copy[dependent_var == 0] = np.nan
         result = dependent_var_copy * np.log(model_copy / dependent_var_copy)
         res = -2*(result + (dependent_var_copy - model_copy))

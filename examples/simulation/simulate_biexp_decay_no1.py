@@ -10,7 +10,7 @@ Example of simulating a bi-exponential fluorescence decay with Monte Carlo metho
 from fluo.simulation import make_simulation
 from matplotlib import pyplot as plt
 import numpy as np
-np.set_printoptions(threshold=np.nan)
+
 
 def main():
     """Illustrate workflow to simulate a bi-exponential decay.

@@ -10,7 +10,7 @@ Example of simulating a mono-exponential fluorescence decay with Monte Carlo met
 from fluo.simulation import make_simulation
 from matplotlib import pyplot as plt
 import numpy as np
-np.set_printoptions(threshold=np.nan)
+
 
 def main():
     """Illustrate workflow to simulate a mono-exponential decay.
