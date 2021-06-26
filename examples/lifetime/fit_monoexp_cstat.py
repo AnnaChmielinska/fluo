@@ -11,7 +11,7 @@ decay to a single measurement using C Statistic.
 from fluo.fitter import make_lifetime_fitter
 from matplotlib import pyplot as plt
 import numpy as np
-np.set_printoptions(threshold=np.nan)
+
 
 def main():
     """Illustrate workflow for fitting a mono-exponential decay.
@@ -42,6 +42,7 @@ def main():
         fit_statistic='c_statistic'
         )
     cstat_fit = cstat_fitter.fit(report=True)
+    # exit(1)
     # plot
     plt.plot(time, decay, 'bo', label='decay')
     plt.plot(time, irf, 'go', label='irf')

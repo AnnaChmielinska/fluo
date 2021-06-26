@@ -12,7 +12,7 @@ from fluo.fitter import make_global_lifetime_fitter, iterative_least_squares
 from matplotlib import pyplot as plt
 import numpy as np
 CMAP = plt.get_cmap('gist_rainbow')
-np.set_printoptions(threshold=np.nan)
+
 
 def main():
     """Illustrate workflow for fitting a bi-exponential decay.

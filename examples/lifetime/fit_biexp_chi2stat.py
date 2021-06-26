@@ -11,7 +11,6 @@ decay to a single measurement using Chi2 Statistic.
 from fluo.fitter import make_lifetime_fitter
 from matplotlib import pyplot as plt
 import numpy as np
-np.set_printoptions(threshold=np.nan)
 
 def main():
     """Illustrate workflow for fitting a bi-exponential decay.
