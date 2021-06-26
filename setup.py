@@ -25,6 +25,6 @@ setup(
         'scipy >= 1.7.0, < 1.7.1',
         'numpy >= 1.21.0, < 1.21.1',
         'tqdm >= 4.15.0, < 4.15.1',
-        'importlib_metadata >= 4.15.0, < 4.15.1'
+        'importlib_metadata >= 4.5.0, < 4.5.1'
     ]
 )
